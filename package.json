@@ -1,0 +1,53 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My Resume ",
+  "main": "index.js",
+  "scripts": {
+    "test": "resume test ./config/resume.json",
+    "start-html": "npm run build-html && budo --dir app",
+    "start-pdf": "fluentcv BUILD config/resume.json to pdf/index.html -t jsonresume-theme-class && budo --dir pdf",
+    "pdf": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-pdf",
+    "html": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-html",
+    "build-html": "fluentcv BUILD config/resume.json to app/index.html -t jsonresume-theme-eloquent",
+    "build-pdf": "fluentcv BUILD config/resume.json pdf/resume.pdf -t jsonresume-theme-class"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nascherman/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "nascherman"
+  ],
+  "author": "nascherman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nascherman/resume/issues"
+  },
+  "homepage": "https://github.com/nascherman/resume#readme",
+  "devDependencies": {
+    "babel-polyfill": "^6.16.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "budo": "^9.2.2",
+    "fluentcv": "^1.8.1",
+    "jsonresume-theme-class": "^0.1.2",
+    "jsonresume-theme-eloquent": "^3.0.1",
+    "less-css-stream": "^1.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "onchange": "^3.0.2",
+    "resume-cli": "^0.4.14",
+    "uglify-js": "^2.7.4",
+    "wkhtmltopdf": "^0.3.3"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "handlebars": "^4.0.6",
+    "optimist": "^0.6.1",
+    "source-map": "^0.5.6"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "basics": {
+    "name": "Nicholas Scherman",
+    "label": "Web Developer",
+    "picture": "",
+    "email": "n_scherman@hotmail.com",
+    "phone": "(647) 459 6580",
+    "website": "https://nickscherman.com",
+    "summary": "Developer specializing in web frameworks, libraries, and services",
+    "location": {
+      "address": "North York",
+      "postalCode": "",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "profiles": [{
+      "network": "Linkedin",
+      "username": "Nick Scherman",
+      "url": "https://www.linkedin.com/in/nick-scherman-47612039"
+    }]
+  },
+  "work": [
+    {
+      "company": "Wilkinson Chutes",
+      "position": "Fabricator",
+      "website": "http://www.wilkinsonchutes.ca/",
+      "startDate": "2012-05-01",
+      "endDate": "2013-09-01",
+      "summary": "",
+      "highlights": [
+        "Metal fabrication and Blue print interpretation"
+      ]
+    },
+    {
+      "company": "Seneca College",
+      "position": "Course Marker",
+      "website": "https://petermcintyre.com/dps907/",
+      "startDate": "2016-09-01",
+      "endDate": "2017-01-01",
+      "summary": "DPS907/WSA500 is a class focusing on development resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web servies including Model/Resource relationships, Security and Deployment of web APIs",
+      "highlights": [
+        "Marked student assignments and provided feedback and input on the development of future course material"
+      ]
+    },
+    {
+      "company": "Independant",
+      "position": "Web Developer",
+      "website": [],
+      "startDate": "2014-01-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+        "Services included, develpment, hosting and SEO",
+        "Desktop/Mobile design. Focused on best practices and educated design choices.",
+        "SEO using Google Analytics, Adwords",
+        "Backend database services using Django and interaction with external APIs"
+      ]
+    },
+    {
+      "company": "CIBC",
+      "position": "Intermediate Application Developer (Co-op)",
+      "website": "https://www.cibc.com/ca/newhrwelcome/our-structure.html",
+      "startDate": "2015-05-01",
+      "endDate": "2015-09-01",
+      "summary": "Intermediate Application developers at CIBC are responsible for working with existing applications and providing solutions to application issues as they arise as well as maintaining and updating application code.",
+      "highlights": [
+        "Implemented features in java for update of internal application.",
+        "Created runbooks for the migration of the Development and User-Acceptance Testing (UAT) application servers – including gap-analysis and solutions for software updated with the migration.",
+        "Management of development and UAT servers",
+        "Honourable Mention for the Summer 2015 student achievement award."
+      ]
+    },
+    {
+      "company": "Jam3",
+      "position": "Developer",
+      "website": "https://jam3.com",
+      "startDate": "2016-01-01",
+      "endDate": "2016-09-01",
+      "summary": "Jam3 is an innovative production company focusing on unique front-end experiences. Developers work with designers to create unique interactice experiences through web browsers and other mediums.",
+      "highlights": [
+        "Developed UI and frameworks for new and existing projects",
+        "Created extensible libraries using NPM for use in projects",
+        "Cutting edge technologies like React/Redux, Threejs/Webgl",
+        "Research and development creating Machine-learning web services.",
+        "Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Seneca College",
+      "area": "Computer Programming and Analysis",
+      "studyType": "Diploma",
+      "startDate": "2013-09-01",
+      "endDate": "2016-12-24",
+      "gpa": "3.8",
+      "summary": "Seneca college focuses on teaching the foundations of good programming techniques as well as an introduction to some of the most popular modern programming models like MVC and REST. The Computer Programming and Analysis program provides an opportunity to create complete solutions for common development challenges like implementing storefront applications and social media applications as well as more specialized tasks like parallelization."
+    },
+    {
+      "institution": "University of Waterloo",
+      "area": "Political Science",
+      "studyType": "Degree",
+      "startDate": "2008-09-01",
+      "endDate": "2012-01-01",
+      "gpa": "3.0",
+      "summary": "The University of Waterloo Political Science program provides a strong foundation on the analysis of essential political theories and concepts, their application to real and historical events as well as providing a strong foundation for research and criticial thinking skills."
+    }
+  ],
+  "skills": [
+    {
+    "name": "Javascript Web Development",
+    "level": "Expert",
+    "keywords": [
+      "React/Redux",
+      "Routed Single Page Applications",
+      "SASS/LESS",
+      "WebGL",
+      "Responsive Design",
+      "Node.js libraries"
+    ]
+    },
+    {
+      "name": ".Net Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "C#",
+        "Asp.net",
+        "MVC",
+        "RESTful APIs",
+        "Oauth2",
+        "Instructor"
+      ]
+    },
+    {
+      "name": "Python Web Development",
+      "level": "Expert",
+      "keywords": [
+        "Django Rest framework applications with oauth2",
+        "Flaks Rest APIs",
+        "Interaction with Python Caffe neural networks"
+      ]
+    },
+    {
+      "name": "General Programming",
+      "level": "Expert",
+      "keywords": [
+        "GIT/Versioning",
+        "UML - System Design",
+        "MySQL/Postgres/MongoDB",
+        "Java Applications - Websphere/Tomcat",
+        "C/C++"
+      ]
+    }
+  ],
+  "interests": [
+    {
+    "name": "Wildlife",
+    "keywords": [
+      "Ferrets",
+      "Unicorns"
+    ]
+    }
+  ],
+  "references": [{
+    "name": "References available upon request.",
+    "reference": ""
+  }]
+}

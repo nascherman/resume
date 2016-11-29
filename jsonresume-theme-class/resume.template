@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+	<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>{{#resume.basics}}{{name}} - CV{{/resume.basics}}</title>
+
+	<style>
+	{{{css}}}
+	</style>
+	
+	</head>
+	<body>
+	
+	{{#resume.basics}}
+	<header>
+	<h1>{{name}}</h1>
+	{{#if label}}
+	<h2>{{label}}</h2>
+	{{/if}}
+	</header>
+
+	<div id="content" class="container">
+	<section id="basics">
+		<div class="contact">
+		<h3>Contact</h3>
+		{{#if website}}
+		<div class="website">
+			<strong>Website</strong>
+			{{website}}
+		</div>
+		{{/if}}
+		{{#if email}}
+		<div class="email">
+			<strong>Email</strong>
+			{{email}}
+		</div>
+		{{/if}}
+		{{#if phone}}
+		<div class="phone">
+			<strong>Phone</strong>
+			{{phone}}
+		</div>
+		{{/if}}
+		</div>
+		{{#if summary}}
+		<div class="summary">
+			<p>{{summary}}</p>
+		</div>
+		{{/if}}
+		
+	</section>
+	{{/resume.basics}}
+
+	{{#if resume.work.length}}
+	<section id="work">
+		<h2>Work</h2>
+		{{#each resume.work}}
+		<div class="item">
+			{{#if company}}
+			<h3 class="work_name">
+				{{company}}
+			</h3>
+			{{/if}}
+			
+			{{#if position}}
+			<div class="work_position">
+				{{position}}
+			</div>
+			{{/if}}
+
+			<div class="work_date">
+				{{#if startDate}}
+				<span class="startDate">
+					{{startDate}}
+				</span>
+				{{/if}}
+				{{#if endDate}}
+				<span class="endDate">
+					 {{endDate}}
+				</span>
+				{{else}}
+				<span class="endDate">
+					- Present
+				</span>
+				{{/if}}
+			</div>
+
+			{{#if website}}
+			<div class="work_website">
+				<a href="{{website}}">{{website}}</a>
+			</div>
+			{{/if}}
+
+
+			{{#if summary}}
+			<div class="summary">
+				<p>{{summary}}</p>
+			</div>
+			{{/if}}
+			{{#if highlights.length}}
+			<ul class="highlights">
+				{{#each highlights}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+	</section>
+	{{/if}}
+
+	{{#if resume.parttime.length}}
+	<section id="work">
+		<h2>Part Time Work</h2>
+		{{#each resume.parttime}}
+		<div class="item">
+			{{#if company}}
+			<h3 class="work_name">
+				{{company}}
+			</h3>
+			{{/if}}
+			
+			{{#if position}}
+			<div class="work_position">
+				{{position}}
+			</div>
+			{{/if}}
+
+			<div class="work_date">
+				{{#if startDate}}
+				<span class="startDate">
+					{{startDate}}
+				</span>
+				{{/if}}
+				{{#if endDate}}
+				<span class="endDate">
+					 {{endDate}}
+				</span>
+				{{else}}
+				<span class="endDate">
+					- Present
+				</span>
+				{{/if}}
+			</div>
+
+			{{#if website}}
+			<div class="work_website">
+				<a href="{{website}}">{{website}}</a>
+			</div>
+			{{/if}}
+
+
+			{{#if summary}}
+			<div class="summary">
+				<p>{{summary}}</p>
+			</div>
+			{{/if}}
+			{{#if highlights.length}}
+			<ul class="highlights">
+				{{#each highlights}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+	</section>
+	{{/if}}
+
+	{{#if resume.volunteer.length}}
+	<section id="volunteer">
+		<h2>Volunteer</h2>
+		{{#each resume.volunteer}}
+		<div class="item">
+			{{#if organization}}
+			<h3 class="company">
+				{{organization}}
+			</h3>
+			{{/if}}
+			
+			{{#if position}}
+			<div class="work_position">
+				{{position}}
+			</div>
+			{{/if}}
+			{{#if website}}
+
+			<div class="work_date">
+				{{#if startDate}}
+				<span class="startDate">
+					{{startDate}}
+				</span>
+				{{/if}}
+				{{#if endDate}}
+				<span class="endDate">
+					- {{endDate}}
+				</span>
+				{{else}}
+				<span class="endDate">
+					- Present
+				</span>
+				{{/if}}
+			</div>
+
+			<div class="work_website">
+				<a href="{{website}}">{{website}}</a>
+			</div>
+			{{/if}}
+			{{#if summary}}
+			<div class="summary">
+				<p>{{summary}}</p>
+			</div>
+			{{/if}}
+			{{#if highlights.length}}
+			<ul class="highlights">
+				{{#each highlights}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+	</section>
+	{{/if}}
+	
+	{{#if resume.education.length}}
+	<section id="education">
+		<h2>Education</h2>
+		{{#each resume.education}}
+		<div class="item">
+			{{#if institution}}
+			<div class="institution">
+				{{institution}}
+			</div>
+			{{/if}}
+
+			<div class="study_date">
+				{{#if startDate}}
+				<span class="startDate">
+					{{startDate}}
+				</span>
+				{{/if}}
+				{{#if endDate}}
+				<span class="endDate">
+					- {{endDate}}
+				</span>
+				{{else}}
+				<span class="endDate">
+					- Present
+				</span>
+				{{/if}}
+			</div>
+
+			{{#if studyType}}
+			<div class="qualification">
+				{{area}} - {{studyType}} 	
+			</div>
+			{{/if}}
+
+			{{#if summary}}
+			<br />
+			<br />
+			<div class="dissertation">
+				{{summary}}
+			</div>
+			{{/if}}
+
+			{{#if courses.length}}
+			<p>Courses: </p>
+			<ul class="courses">
+				{{#each courses}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+		<br>
+	</section>
+	{{/if}}
+
+	{{#if resume.skills.length}}
+	<section id="skills">
+		<h2>Skills</h2>
+		{{#each resume.skills}}
+		<div class="item">
+			{{#if name}}
+			<div class="name">
+				<p>{{name}}</p>
+			</div>
+			{{/if}}
+			{{#if level}}
+			<div class="level">
+				<em>{{level}}</em>
+			</div>
+			{{/if}}
+			{{#if keywords.length}}
+			<ul class="keywords">
+				{{#each keywords}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+		</section>
+	{{/if}}
+
+	{{#if resume.interests.length}}
+	<section id="interests">
+		<h2>Interests</h2>
+		{{#each resume.interests}}
+		<div class="item">
+			{{#if name}}
+			<div class="name">
+				{{name}}
+			</div>
+			{{/if}}
+			{{#if keywords.length}}
+			<ul class="keywords">
+				{{#each keywords}}
+				<li>{{.}}</li>
+				{{/each}}
+			</ul>
+			{{/if}}
+		</div>
+		{{/each}}
+	</section>
+	{{/if}}
+	
+
+	{{#if resume.references.length}}
+		<section>
+			<h2>References available upon request</h2>
+		</section>
+	{{/if}}
+	</div>
+	</body>
+</html>
