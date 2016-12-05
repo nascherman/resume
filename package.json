@@ -8,9 +8,8 @@
     "start-html": "npm run build-html && budo --dir app",
     "start-pdf": "fluentcv BUILD config/resume.json to pdf/index.html -t jsonresume-theme-class && budo --dir pdf",
     "pdf": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-pdf",
-    "html": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-html",
-    "build-html": "fluentcv BUILD config/resume.json to app/index.html -t jsonresume-theme-eloquent",
-    "build-pdf": "fluentcv BUILD config/resume.json pdf/resume.pdf -t jsonresume-theme-class"
+    "html": "onchange 'config/*' -- npm run start-html",
+    "build-html": "node eloquent.js"
   },
   "repository": {
     "type": "git",
@@ -35,8 +34,6 @@
     "browserify": "^13.1.1",
     "budo": "^9.2.2",
     "fluentcv": "^1.8.1",
-    "jsonresume-theme-class": "^0.1.2",
-    "jsonresume-theme-eloquent": "^3.0.1",
     "less-css-stream": "^1.0.0",
     "less-plugin-autoprefix": "^1.5.1",
     "onchange": "^3.0.2",
@@ -46,7 +43,9 @@
   },
   "dependencies": {
     "async": "^2.1.4",
+    "email-scramble": "^2.0.1",
     "handlebars": "^4.0.6",
+    "moment": "^2.17.0",
     "optimist": "^0.6.1",
     "source-map": "^0.5.6"
   }

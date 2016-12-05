@@ -51,9 +51,8 @@
       "endDate": "",
       "summary": "",
       "highlights": [
-        "Services included, develpment, hosting and SEO",
+        "Services included, develpment, hosting and SEO using Google Analytics, Adwords etc.",
         "Desktop/Mobile design. Focused on best practices and educated design choices.",
-        "SEO using Google Analytics, Adwords",
         "Backend database services using Django and interaction with external APIs"
       ]
     },
@@ -155,11 +154,19 @@
   ],
   "interests": [
     {
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
+      "name": "PC Gaming",
+      "keywords": [
+        "Game modding",
+        "Hardware builds",
+        "Raspberry PI SNES Emulator"
+      ]
+    },
+    {
+      "name": "Outdoors",
+      "keywords": [
+        "Running",
+        "Camping"
+      ]
     }
   ],
   "references": [{

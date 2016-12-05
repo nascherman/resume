@@ -3,7 +3,7 @@
 /* General, overall styling */
 body {
 	padding-top: 0px;
-	font-size: 12pt;
+	font-size: 13.2pt;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 100px;
 }
@@ -188,7 +188,7 @@ h3, .institution {
 
 #work .item,
 #volunteer .item {
-	margin: 25px 0;
+	margin: 20px 0;
 }
 
 /* End work and volunteering */
@@ -213,6 +213,11 @@ h3, .institution {
 
 #interests .item {
 	margin-bottom: 25px;
+	vertical-align: top;
+}
+
+#interests .name {
+	font-weight: bold;
 }
 
 #skills {
