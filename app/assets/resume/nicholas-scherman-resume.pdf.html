@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+	<head>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Nick Scherman - CV</title>
+
+	<style>
+	/*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]){display:none}[hidden]{display:none}html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}html,button,input,select,textarea{font-family:sans-serif}body{margin:0}a:focus{outline:thin dotted}a:hover,a:active{outline:0}h1{font-size:2em;margin:.67em 0}h2{font-size:1.5em;margin:.83em 0}h3{font-size:1.17em;margin:1em 0}h4{font-size:1em;margin:1.33em 0}h5{font-size:.83em;margin:1.67em 0}h6{font-size:.75em;margin:2.33em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}p,pre{margin:1em 0}pre,code,kbd,samp{font-family:monospace,serif;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small{font-size:75%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}dl,menu,ol,ul{margin:1em 0}dd{margin:0 0 0 40px}menu,ol,ul{padding:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}form{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0;white-space:normal;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal}button,input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button;*overflow:visible}button[disabled],input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+
+/* General, overall styling */
+@font-face {
+	font-family: 'Helvetica';
+	src: url('./HelveticaNeueLt.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src: url('./Helvetica\ Neu\ Bold.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Helvetica';
+	src url('./HelveticaNeue.ttf');
+	font-weight: italic;
+}
+
+body {
+	padding-top: 0px;
+	font-size: 11.3pt;
+	font-family: 'Helvetica', sans-serif;
+	margin-bottom: 0px;
+}
+
+
+
+em {
+	color: #999;
+}
+
+p {
+	line-height: 1.2;
+}
+
+a {
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+a:hover {
+	color: #000;
+}
+
+ul {
+	margin-bottom: 0;
+	margin: 0;
+}
+section {
+	margin-bottom: 0.5em;
+}
+
+blockquote {
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+/* End general, overall styling */
+
+/* Header name styling */
+
+header {
+	padding: 0px;
+	margin-bottom: 5px;
+	max-width: 700px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+header h1 {
+	color: #000;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	max-width: 700px;
+	margin: 0;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: bottom:
+}
+
+header h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+	color: #0f0f0f;
+	margin: 0;
+	font-size: 1em;
+	text-align: left;
+}
+.head {
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+}
+.contact {
+	margin: 0;
+	text-align: right;
+	width: 49%; 
+	font-size: 1em;
+	display: inline-block;
+}
+
+.contact strong {
+	line-height: 1.2;
+	display: inline-block;
+	width: 80px;
+}
+
+#content h2 {
+	background: #D0D0D0;
+	padding: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* End header name styling */
+
+/* Set width of main body of CV */
+.container {
+	max-width: 700px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.highlights li {
+	display: list-item;
+	margin-left: 15px;
+}
+
+
+/* End */
+
+/* Styling Basics (Name, Contact, About, Profiles) */
+
+#basics {
+	margin-bottom: 5px;
+	border-top: 1px #E2E2E2 solid;
+	border-bottom: 1px #E2E2E2 solid;
+}
+#basics h3 {
+	margin-top: 0em;
+	margin-bottom: 0px;
+}
+
+.website,
+.email,
+.phone {
+	margin-bottom: 0px;
+	display: inline-block;
+	width: 50%;
+}
+
+.summary {
+	padding-top: 0px;
+	clear: both;
+}
+
+#profiles {
+	overflow: hidden;
+}
+
+h3, .institution { 
+	text-transform: uppercase;
+}
+
+
+#profiles .item {
+	display: inline-block;
+	width: 49%;
+	padding: 0;
+}
+
+#skills .item {
+	vertical-align: top;
+}
+
+.username{
+	margin-top: 10px;
+}
+
+/* End 'Basics' Styling */
+
+/* Work and volunteering experience styling */
+
+.work_date,
+.work_position,
+.work_website,
+.institution,
+.study_date,
+.qualification {
+	margin-bottom: 0px;
+	display: inline-block;
+	width: 30%;
+	font-weight: bold;
+}
+
+.work_position {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+.work_date {
+	float: right;
+}
+
+.work_name {
+	margin: 5px 0;
+}
+
+.courses {
+	clear: both;
+}
+
+.dissertation {
+	display: block;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+#work,
+#volunteer {
+	padding-bottom: 0px;
+}
+
+#work .item,
+#volunteer .item, #education .item, #skills .item  {
+	margin: 5px 0;
+	padding-bottom: 5px;
+	border-bottom: 1px #E2E2E2 solid;
+}
+
+/* End work and volunteering */
+
+/* Skills, languages, interests and references styling */
+
+.highlights {
+	margin: 0;
+	padding: 0;
+}
+
+#skills {
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+}
+
+#skills .item,
+#languages .item {
+	margin: 0 0 0px 0;
+}
+
+#interests .item {
+	margin-bottom: 0px;
+	vertical-align: top;
+}
+
+#interests .name {
+	font-weight: bold;
+}
+
+#skills {
+	overflow: hidden;
+}
+
+#languages .item,
+#interests .item,
+#skills .item {
+	display: inline-block;
+	width: 32%;
+}
+
+#education {
+	margin-top: 0px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+#references,
+#interests {
+	clear: both;
+}
+
+div.name {
+	margin-left: 25px;
+}
+
+.level {
+	margin-left: 25px;
+}
+
+div.name p {
+	margin: 0;
+	font-weight: bold;
+}
+
+#skills .references {
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+#content h2 {
+	margin: 0;
+	margin-bottom: 0px;
+}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header>
+	<div class='head'>
+	<h1>Nick Scherman</h1>
+	<h2>Web Developer</h2>
+	</div>
+	<div class="contact">
+		<div class="website">
+			https://nickscherman.com
+		</div>
+		<div class="email">
+			n_scherman@hotmail.com
+		</div>
+		<div class="phone">
+			(647) 459 6580
+		</div>
+		</div>
+	</header>
+
+	<div id="content" class="container">
+	<section id="basics">
+		<div class="summary">
+			<p>Web developer focusing on resilient application development, UI/UX design and web services.</p>
+		</div>
+		
+	</section>
+
+	<section id="work">
+		<h2>Work</h2>
+		<div class="item">
+			<h3 class="work_name">
+				Seneca College
+			</h3>
+			
+			<div class="work_position">
+				Course Assistant
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2016-09-01
+				</span>
+				<span class="endDate">
+					 2016-12-20
+				</span>
+			</div>
+
+			<div class="summary">
+				<p>DPS907/WSA500 is a class focusing on developing resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web services including Model/Resource relationships, Security and Deployment of web APIs.</p>
+			</div>
+			<ul class="highlights">
+				<li>Marked student assignments providing comments/analysis</li>
+				<li>Provided feedback and input on the development of future course material</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="work_name">
+				Jam3
+			</h3>
+			
+			<div class="work_position">
+				Developer
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2016-01-01
+				</span>
+				<span class="endDate">
+					 2016-09-01
+				</span>
+			</div>
+
+			<div class="summary">
+				<p>Jam3 is a production company delivering unique digital experiences with a focus and innovative UI/UX. Developers work with designers to create unique interactive experiences through web browsers and other mediums.</p>
+			</div>
+			<ul class="highlights">
+				<li>Developed user interfaces and development frameworks for new and existing projects</li>
+				<li>Created extensible libraries using NPM for use in projects</li>
+				<li>Libraries and Frameworks like React/Redux, Threejs/Webgl</li>
+				<li>Created Electron cross-platform applications and Chrome extensions</li>
+				<li>Development native applications with Crosswalk and React native</li>
+				<li>Development lead on small project for Canadian Blood services</li>
+				<li>Research and development creating Machine-learning web services.</li>
+				<li>Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="work_name">
+				CIBC
+			</h3>
+			
+			<div class="work_position">
+				Intermediate Application Developer (Co-op)
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2015-05-01
+				</span>
+				<span class="endDate">
+					 2015-09-01
+				</span>
+			</div>
+
+			<div class="summary">
+				<p>Intermediate Application developers at CIBC are responsible for working with existing applications and providing solutions to application issues as they arise as well as maintaining and updating application code.</p>
+			</div>
+			<ul class="highlights">
+				<li>Implemented features in java for update of internal application.</li>
+				<li>Created runbooks for the migration of the Development and User-Acceptance Testing (UAT) application servers  including gap-analysis and solutions for software updated with the migration.</li>
+				<li>Management of development and UAT servers</li>
+				<li>Honourable Mention for the Summer 2015 student achievement award.</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="work_name">
+				Independent
+			</h3>
+			
+			<div class="work_position">
+				Web Developer
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2014-01-01
+				</span>
+				<span class="endDate">
+					- Present
+				</span>
+			</div>
+
+			<div class="summary">
+				<p></p>
+			</div>
+			<ul class="highlights">
+				<li>Services included, development, hosting and SEO using Google Analytics, Adwords etc.</li>
+				<li>Desktop/Mobile design. Focused on best practices and informed design choices.</li>
+				<li>Backend database services using Django and interaction with external APIs</li>
+			</ul>
+		</div>
+		<div class="item">
+			<h3 class="work_name">
+				Wilkinson Chutes
+			</h3>
+			
+			<div class="work_position">
+				Fabricator
+			</div>
+
+			<div class="work_date">
+				<span class="startDate">
+					2012-05-01
+				</span>
+				<span class="endDate">
+					 2013-09-01
+				</span>
+			</div>
+
+			<div class="summary">
+				<p></p>
+			</div>
+			<ul class="highlights">
+				<li>Metal fabrication and blue print interpretation</li>
+			</ul>
+		</div>
+	</section>
+
+
+	
+	<section id="education">
+		<h2>Education</h2>
+		<div class="item">
+			<div class="institution">
+				Seneca College
+			</div>
+
+			<div class="study_date">
+				<span class="startDate">
+					2013-09-01
+				</span>
+				<span class="endDate">
+					- 2016-12-20
+				</span>
+			</div>
+
+			<div class="qualification">
+				Computer Programming and Analysis - Advanced Diploma 	
+			</div>
+
+			<br />
+			<br />
+			<div class="dissertation">
+				The Seneca College school of ICT has a well developed and reputable programming department that focuses on teaching a range of fundamental and advanced programming techniques including data structures and algorithms, database design and general and specialized software development. Students have the opportunity to take part in co operative education and to contribute to open source technology at the prestigious Centre for Development of Open Technology.
+			</div>
+
+		</div>
+		<div class="item">
+			<div class="institution">
+				University of Waterloo
+			</div>
+
+			<div class="study_date">
+				<span class="startDate">
+					2008-09-01
+				</span>
+				<span class="endDate">
+					- 2012-01-01
+				</span>
+			</div>
+
+			<div class="qualification">
+				Political Science - Degree 	
+			</div>
+
+			<br />
+			<br />
+			<div class="dissertation">
+				The University of Waterloo Political Science program provides a strong foundation on the analysis of essential political theories and concepts, their application to real and historical events as well as providing a strong foundation for research and critical thinking skills.
+			</div>
+
+		</div>
+		<br>
+	</section>
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="item">
+			<div class="name">
+				<p>Javascript</p>
+			</div>
+			<div class="level">
+				<em>Expert</em>
+			</div>
+			<ul class="keywords">
+				<li>React/Angularjs Libraries and Frameworks</li>
+				<li>Build tools like Grunt, Gulp and Browserify</li>
+				<li>Modern ES6 and Babel syntax</li>
+				<li>Single Page Applications</li>
+				<li>Data visualizations and experiences with D3.js and WebGL</li>
+				<li>XHR/Ajax</li>
+				<li>NPM library contributor</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				<p>Asp.Net</p>
+			</div>
+			<div class="level">
+				<em>Intermediate</em>
+			</div>
+			<ul class="keywords">
+				<li>Web services using Restful architecture</li>
+				<li>Web Apps using Razor syntax, JavaScript and Jquery</li>
+				<li>Asp.Net MVC design pattern best-practices</li>
+				<li>Microsoft Azure deployment</li>
+				<li>OAuth2/Tokenized security</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				<p>General Web Development</p>
+			</div>
+			<div class="level">
+				<em>Intermediate</em>
+			</div>
+			<ul class="keywords">
+				<li>Web servers with Express and NGINX</li>
+				<li>Compiled stylesheets CSS with LESS/SASS</li>
+				<li>UI/UX</li>
+				<li>API testing with Postman</li>
+				<li>Real-time applications with Socket.IO</li>
+				<li>Leveraging Google services (Analytics, Adwords, Cloud services)</li>
+				<li>Amazon Web Services (S3)</li>
+				<li>Microservices with Heroku and Docker</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				<p>Server side programming</p>
+			</div>
+			<div class="level">
+				<em>Intermediate</em>
+			</div>
+			<ul class="keywords">
+				<li>Rest API creation</li>
+				<li>OAuth2 security</li>
+				<li>Abstraction, interfaces and inheritance best practices</li>
+				<li>Database design in Postgres and MySQL</li>
+				<li>Django, Flask, PHP</li>
+			</ul>
+		</div>
+		<div class="item">
+			<div class="name">
+				<p>Development</p>
+			</div>
+			<div class="level">
+				<em>Expert</em>
+			</div>
+			<ul class="keywords">
+				<li>Proficient in C++, Java, JavaScript, python and shell scripting</li>
+				<li>Workflows in Sublime, Visual Studio, and Eclipse</li>
+				<li>Professional expertise in Linux, Mac, and Windows</li>
+			</ul>
+		</div>
+		</section>
+
+	</div>
+	</body>
+</html>

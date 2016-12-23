@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Nicholas Scherman",
+    "name": "Nick Scherman",
     "label": "Web Developer",
     "picture": "",
     "email": "n_scherman@hotmail.com",
     "phone": "(647) 459 6580",
     "website": "https://nickscherman.com",
-    "summary": "Developer specializing in web frameworks, libraries, and services",
+    "summary": "Web developer focusing on resilient application development, UI/UX design and web services.",
     "location": {
       "address": "North York",
       "postalCode": "",
@@ -22,38 +22,33 @@
   },
   "work": [
     {
-      "company": "Wilkinson Chutes",
-      "position": "Fabricator",
-      "website": "http://www.wilkinsonchutes.ca/",
-      "startDate": "2012-05-01",
-      "endDate": "2013-09-01",
-      "summary": "",
-      "highlights": [
-        "Metal fabrication and Blue print interpretation"
-      ]
-    },
-    {
       "company": "Seneca College",
-      "position": "Course Marker",
+      "position": "Course Assistant",
       "website": "https://petermcintyre.com/dps907/",
       "startDate": "2016-09-01",
-      "endDate": "2017-01-01",
-      "summary": "DPS907/WSA500 is a class focusing on development resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web servies including Model/Resource relationships, Security and Deployment of web APIs",
+      "endDate": "2016-12-20",
+      "summary": "DPS907/WSA500 is a class focusing on developing resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web services including Model/Resource relationships, Security and Deployment of web APIs.",
       "highlights": [
-        "Marked student assignments and provided feedback and input on the development of future course material"
+        "Marked student assignments providing comments/analysis",
+        "Provided feedback and input on the development of future course material"
       ]
     },
     {
-      "company": "Independant",
-      "position": "Web Developer",
-      "website": [],
-      "startDate": "2014-01-01",
-      "endDate": "",
-      "summary": "",
+      "company": "Jam3",
+      "position": "Developer",
+      "website": "https://jam3.com",
+      "startDate": "2016-01-01",
+      "endDate": "2016-09-01",
+      "summary": "Jam3 is a production company delivering unique digital experiences with a focus and innovative UI/UX. Developers work with designers to create unique interactive experiences through web browsers and other mediums.",
       "highlights": [
-        "Services included, develpment, hosting and SEO using Google Analytics, Adwords etc.",
-        "Desktop/Mobile design. Focused on best practices and educated design choices.",
-        "Backend database services using Django and interaction with external APIs"
+        "Developed user interfaces and development frameworks for new and existing projects",
+        "Created extensible libraries using NPM for use in projects",
+        "Libraries and Frameworks like React/Redux, Threejs/Webgl",
+        "Created Electron cross-platform applications and Chrome extensions",
+        "Development native applications with Crosswalk and React native",
+        "Development lead on small project for Canadian Blood services",
+        "Research and development creating Machine-learning web services.",
+        "Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
       ]
     },
     {
@@ -65,24 +60,33 @@
       "summary": "Intermediate Application developers at CIBC are responsible for working with existing applications and providing solutions to application issues as they arise as well as maintaining and updating application code.",
       "highlights": [
         "Implemented features in java for update of internal application.",
-        "Created runbooks for the migration of the Development and User-Acceptance Testing (UAT) application servers – including gap-analysis and solutions for software updated with the migration.",
+        "Created runbooks for the migration of the Development and User-Acceptance Testing (UAT) application servers  including gap-analysis and solutions for software updated with the migration.",
         "Management of development and UAT servers",
         "Honourable Mention for the Summer 2015 student achievement award."
       ]
     },
     {
-      "company": "Jam3",
-      "position": "Developer",
-      "website": "https://jam3.com",
-      "startDate": "2016-01-01",
-      "endDate": "2016-09-01",
-      "summary": "Jam3 is an innovative production company focusing on unique front-end experiences. Developers work with designers to create unique interactice experiences through web browsers and other mediums.",
+      "company": "Independent",
+      "position": "Web Developer",
+      "website": [],
+      "startDate": "2014-01-01",
+      "endDate": "",
+      "summary": "",
       "highlights": [
-        "Developed UI and frameworks for new and existing projects",
-        "Created extensible libraries using NPM for use in projects",
-        "Cutting edge technologies like React/Redux, Threejs/Webgl",
-        "Research and development creating Machine-learning web services.",
-        "Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
+        "Services included, development, hosting and SEO using Google Analytics, Adwords etc.",
+        "Desktop/Mobile design. Focused on best practices and informed design choices.",
+        "Backend database services using Django and interaction with external APIs"
+      ]
+    },
+    {
+      "company": "Wilkinson Chutes",
+      "position": "Fabricator",
+      "website": "http://www.wilkinsonchutes.ca/",
+      "startDate": "2012-05-01",
+      "endDate": "2013-09-01",
+      "summary": "",
+      "highlights": [
+        "Metal fabrication and blue print interpretation"
       ]
     }
   ],
@@ -90,11 +94,11 @@
     {
       "institution": "Seneca College",
       "area": "Computer Programming and Analysis",
-      "studyType": "Diploma",
+      "studyType": "Advanced Diploma",
       "startDate": "2013-09-01",
-      "endDate": "2016-12-24",
-      "gpa": "3.8",
-      "summary": "Seneca college focuses on teaching the foundations of good programming techniques as well as an introduction to some of the most popular modern programming models like MVC and REST. The Computer Programming and Analysis program provides an opportunity to create complete solutions for common development challenges like implementing storefront applications and social media applications as well as more specialized tasks like parallelization."
+      "endDate": "2016-12-20",
+      "gpa": "3.7",
+      "summary": "The Seneca College school of ICT has a well developed and reputable programming department that focuses on teaching a range of fundamental and advanced programming techniques including data structures and algorithms, database design and general and specialized software development. Students have the opportunity to take part in co operative education and to contribute to open source technology at the prestigious Centre for Development of Open Technology."
     },
     {
       "institution": "University of Waterloo",
@@ -103,52 +107,66 @@
       "startDate": "2008-09-01",
       "endDate": "2012-01-01",
       "gpa": "3.0",
-      "summary": "The University of Waterloo Political Science program provides a strong foundation on the analysis of essential political theories and concepts, their application to real and historical events as well as providing a strong foundation for research and criticial thinking skills."
+      "summary": "The University of Waterloo Political Science program provides a strong foundation on the analysis of essential political theories and concepts, their application to real and historical events as well as providing a strong foundation for research and critical thinking skills."
     }
   ],
   "skills": [
     {
-    "name": "Javascript Web Development",
+    "name": "Javascript",
     "level": "Expert",
     "keywords": [
-      "React/Redux",
-      "Routed Single Page Applications",
-      "SASS/LESS",
-      "WebGL",
-      "Responsive Design",
-      "Node.js libraries"
+      "React/Angularjs Libraries and Frameworks",
+      "Build tools like Grunt, Gulp and Browserify",
+      "Modern ES6 and Babel syntax",
+      "Single Page Applications",
+      "Data visualizations and experiences with D3.js and WebGL",
+      "XHR/Ajax",
+      "NPM library contributor"
     ]
     },
     {
-      "name": ".Net Web Development",
+      "name": "Asp.Net",
       "level": "Intermediate",
       "keywords": [
-        "C#",
-        "Asp.net",
-        "MVC",
-        "RESTful APIs",
-        "Oauth2",
-        "Instructor"
+        "Web services using Restful architecture",
+        "Web Apps using Razor syntax, JavaScript and Jquery",
+        "Asp.Net MVC design pattern best-practices",
+        "Microsoft Azure deployment",
+        "OAuth2/Tokenized security"
       ]
     },
     {
-      "name": "Python Web Development",
-      "level": "Expert",
+      "name": "General Web Development",
+      "level": "Intermediate",
       "keywords": [
-        "Django Rest framework applications with oauth2",
-        "Flaks Rest APIs",
-        "Interaction with Python Caffe neural networks"
+        "Web servers with Express and NGINX",
+        "Compiled stylesheets CSS with LESS/SASS",
+        "UI/UX",
+        "API testing with Postman",
+        "Real-time applications with Socket.IO",
+        "Leveraging Google services (Analytics, Adwords, Cloud services)",
+        "Amazon Web Services (S3)",
+        "Microservices with Heroku and Docker"
       ]
     },
     {
-      "name": "General Programming",
+      "name": "Server side programming",
+      "level": "Intermediate",
+      "keywords": [
+        "Rest API creation",
+        "OAuth2 security",
+        "Abstraction, interfaces and inheritance best practices",
+        "Database design in Postgres and MySQL",
+        "Django, Flask, PHP"
+      ]
+    },
+    {
+      "name": "Development",
       "level": "Expert",
       "keywords": [
-        "GIT/Versioning",
-        "UML - System Design",
-        "MySQL/Postgres/MongoDB",
-        "Java Applications - Websphere/Tomcat",
-        "C/C++"
+        "Proficient in C++, Java, JavaScript, python and shell scripting",
+        "Workflows in Sublime, Visual Studio, and Eclipse",
+        "Professional expertise in Linux, Mac, and Windows"
       ]
     }
   ],
@@ -158,7 +176,7 @@
       "keywords": [
         "Game modding",
         "Hardware builds",
-        "Raspberry PI SNES Emulator"
+        "Raspberry PI Motion"
       ]
     },
     {
@@ -166,6 +184,13 @@
       "keywords": [
         "Running",
         "Camping"
+      ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "Instrumental Guitar",
+        "Piano"
       ]
     }
   ],

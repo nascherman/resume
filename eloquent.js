@@ -2,7 +2,7 @@
  
 var fs = require('fs');
 var path = require('path');
-var eloquent = require('jsonresume-theme-eloquent');
+var eloquent = require('./jsonresume-theme-eloquent');
  
 var resumeJSON = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/resume.json'), 'utf-8'));
 var resumeHTML = eloquent.render(resumeJSON);

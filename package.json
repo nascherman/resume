@@ -8,7 +8,8 @@
     "start-html": "npm run build-html && budo --dir app",
     "start-pdf": "fluentcv BUILD config/resume.json to pdf/index.html -t jsonresume-theme-class && budo --dir pdf",
     "pdf": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-pdf",
-    "html": "onchange 'config/*' -- npm run start-html",
+    "build-pdf-html": "fluentcv BUILD config/resume.json to app/assets/resume/nicholas-scherman-resume.pdf -t jsonresume-theme-class && npm run build-html",
+    "html": "npm run build-pdf-html && onchange 'config/*' 'jsonresume-theme-eloquent/*'  -- npm run start-html",
     "build-html": "node eloquent.js"
   },
   "repository": {

@@ -16,35 +16,33 @@
 	
 	{{#resume.basics}}
 	<header>
+	<div class='head'>
 	<h1>{{name}}</h1>
 	{{#if label}}
 	<h2>{{label}}</h2>
 	{{/if}}
-	</header>
-
-	<div id="content" class="container">
-	<section id="basics">
-		<div class="contact">
-		<h3>Contact</h3>
+	</div>
+	<div class="contact">
 		{{#if website}}
 		<div class="website">
-			<strong>Website</strong>
 			{{website}}
 		</div>
 		{{/if}}
 		{{#if email}}
 		<div class="email">
-			<strong>Email</strong>
 			{{email}}
 		</div>
 		{{/if}}
 		{{#if phone}}
 		<div class="phone">
-			<strong>Phone</strong>
 			{{phone}}
 		</div>
 		{{/if}}
 		</div>
+	</header>
+
+	<div id="content" class="container">
+	<section id="basics">
 		{{#if summary}}
 		<div class="summary">
 			<p>{{summary}}</p>
@@ -87,13 +85,6 @@
 				</span>
 				{{/if}}
 			</div>
-
-			{{#if website}}
-			<div class="work_website">
-				<a href="{{website}}">{{website}}</a>
-			</div>
-			{{/if}}
-
 
 			{{#if summary}}
 			<div class="summary">
@@ -309,34 +300,6 @@
 		</section>
 	{{/if}}
 
-	{{#if resume.interests.length}}
-	<section id="interests">
-		<h2>Interests</h2>
-		{{#each resume.interests}}
-		<div class="item">
-			{{#if name}}
-			<div class="name">
-				{{name}}
-			</div>
-			{{/if}}
-			{{#if keywords.length}}
-			<ul class="keywords">
-				{{#each keywords}}
-				<li>{{.}}</li>
-				{{/each}}
-			</ul>
-			{{/if}}
-		</div>
-		{{/each}}
-	</section>
-	{{/if}}
-	
-
-	{{#if resume.references.length}}
-		<section>
-			<h2>References available upon request</h2>
-		</section>
-	{{/if}}
 	</div>
 	</body>
 </html>
