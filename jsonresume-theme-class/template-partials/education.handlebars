@@ -1,0 +1,50 @@
+<div id="education">
+    <div class="content__title">Education</div>
+    {{#each resume.education}}
+        <div class="item">
+            {{#if institution}}
+                <div class="institution">
+                    {{institution}}
+                </div>
+            {{/if}}
+
+            <div class="study_date">
+                {{#if startDate}}
+                    <div class="startDate">
+                        {{startDate}}
+                    </div>
+                {{/if}}
+                {{#if endDate}}
+                    <div class="endDate">
+                        - {{endDate}}
+                    </div>
+                {{else}}
+                    <div class="endDate">
+                        - Present
+                    </div>
+                {{/if}}
+            </div>
+
+            {{#if studyType}}
+                <div class="qualification">
+                    {{area}} - {{studyType}}
+                </div>
+            {{/if}}
+
+            {{#if summary}}
+                <div class="dissertation">
+                    {{summary}}
+                </div>
+            {{/if}}
+
+            {{#if courses.length}}
+                <p>Courses: </p>
+                <ul class="courses">
+                    {{#each courses}}
+                        <li>{{.}}</li>
+                    {{/each}}
+                </ul>
+            {{/if}}
+        </div>
+    {{/each}}
+</div>

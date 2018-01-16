@@ -8,7 +8,7 @@
     "website": "https://nickscherman.com",
     "summary": "Web developer focusing on resilient application development, UI/UX design and web services.",
     "location": {
-      "address": "North York",
+      "address": "North Yorke",
       "postalCode": "",
       "city": "Toronto",
       "countryCode": "CA",
@@ -167,30 +167,6 @@
         "Proficient in C++, Java, JavaScript, python and shell scripting",
         "Workflows in Sublime, Visual Studio, and Eclipse",
         "Professional expertise in Linux, Mac, and Windows"
-      ]
-    }
-  ],
-  "interests": [
-    {
-      "name": "PC Gaming",
-      "keywords": [
-        "Game modding",
-        "Hardware builds",
-        "Raspberry PI Motion"
-      ]
-    },
-    {
-      "name": "Outdoors",
-      "keywords": [
-        "Running",
-        "Camping"
-      ]
-    },
-    {
-      "name": "Music",
-      "keywords": [
-        "Instrumental Guitar",
-        "Piano"
       ]
     }
   ],
