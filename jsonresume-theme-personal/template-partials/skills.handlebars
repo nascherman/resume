@@ -1,24 +1,22 @@
-<div id="skills">
+<div class="skills-section">
     <div class="content__title">Skills</div>
-    {{#each resume.skills}}
-        <div class="item">
-            {{#if name}}
-                <div class="name">
-                    <p>{{name}}</p>
-                </div>
-            {{/if}}
-            {{#if level}}
-                <div class="level">
-                    <em>{{level}}</em>
-                </div>
-            {{/if}}
-            {{#if keywords.length}}
-                <ul class="keywords">
-                    {{#each keywords}}
-                        <li>{{.}}</li>
-                    {{/each}}
-                </ul>
-            {{/if}}
-        </div>
-    {{/each}}
+    <div class="skills-container">
+      {{#each resume.skills}}
+          <div class="item">
+              {{#if name}}
+                  <div class="item__name">
+                      <p>{{name}}</p>
+                  </div>
+              {{/if}}
+              {{#if keywords.length}}
+                  <ul class="item__keywords">
+                      {{#each keywords}}
+                          <li>{{.}}</li>
+                      {{/each}}
+                  </ul>
+              {{/if}}
+          </div>
+      {{/each}}
+    </div>
+
 </div>

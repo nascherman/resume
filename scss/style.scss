@@ -2,8 +2,8 @@
 @import 'fonts';
 
 body {
-  padding-top: 0px;
-  font-size: 2em;
+  padding: 40px 40px;
+  font-size: 1.3em;
   font-family: 'Helvetica', sans-serif;
   margin-bottom: 0px;
 
@@ -14,59 +14,74 @@ body {
   }
 }
 
-.header {
-  display: inline-block;
-  text-align: left;
+.header-container {
 
-  &__heading {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-    font-weight: bold;
+  .header {
     text-align: left;
-    vertical-align: bottom;
+    width: 35%;
+    display: inline-block;
 
-    &--small {
-      font-weight: normal;
-      color: #0f0f0f;
+    &__heading {
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       margin: 0;
+      font-weight: bold;
       text-align: left;
+      vertical-align: bottom;
+
+      &--small {
+        font-weight: normal;
+        color: #0f0f0f;
+        margin: 0;
+        text-align: left;
+      }
     }
   }
-}
 
-.contact-container {
-  margin: 0;
-  text-align: right;
-  //width: 49%;
-  //font-size: 1em;
-  display: inline-block;
-
-  &__website,
-  &__email,
-  &__phone {
-    margin-bottom: 0px;
+  .contact-container {
+    margin: 0;
+    text-align: right;
+    width: 63%;
+    line-height: 1.4em;
+    font-size: 1.1em;
     display: inline-block;
-    width: 50%;
+    vertical-align: top;
+
+    &__website,
+    &__email,
+    &__phone {
+      margin-bottom: 0px;
+      display: inline-block;
+      width: 50%;
+    }
+
+    .basics-section {
+      margin-bottom: 5px;
+      border-top: 1px #E2E2E2 solid;
+      border-bottom: 1px #E2E2E2 solid;
+
+      h3 {
+        margin-top: 0em;
+        margin-bottom: 0px;
+      }
+
+      &__summary {
+        padding-top: 0px;
+        clear: both;
+      }
+    }
   }
 
   .basics-section {
-    margin-bottom: 5px;
-    border-top: 1px #E2E2E2 solid;
-    border-bottom: 1px #E2E2E2 solid;
-
-    h3 {
-      margin-top: 0em;
-      margin-bottom: 0px;
-    }
-
-    &__summary {
-      padding-top: 0px;
-      clear: both;
-    }
+    width: 82%;
+    text-align: justify;
   }
 }
+
+
+
+
 
 .content {
   //width: 100%;
@@ -75,12 +90,15 @@ body {
 
   &__title {
     background: #D0D0D0;
-    padding: 0;
+    padding: 10px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
   }
 
-  .work-section {
+  .work-section,
+  .education-section {
     &__work_date,
     &__work_position,
     &__work_website,
@@ -92,143 +110,65 @@ body {
       width: 30%;
       font-weight: bold;
     }
+
+    .item {
+
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px 0;
+      }
+
+      &__title-container {
+        flex: 40%;
+
+        .work_name,
+        .work_position {
+          display: inline-block;
+        }
+
+        .work_position {
+          font-weight: bold;
+        }
+
+        .work_name {
+          text-transform: uppercase;
+        }
+      }
+
+      .work_date {
+
+        &__end-date,
+        &__start-date {
+          display: inline-block;
+        }
+      }
+      .summary {
+        width: 82%;
+        text-align: justify;
+      }
+
+      .highlights {
+
+        &__list {
+          padding: 0 0 0 40px;
+          margin: 0.25em 0;
+
+          li {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
   }
-}
 
-
-
-
-
-.highlights li {
-  display: list-item;
-  margin-left: 15px;
-}
-
-h3, .institution {
-  text-transform: uppercase;
-}
-
-
-#skills .item {
-  vertical-align: top;
-}
-
-.username{
-  margin-top: 10px;
-}
-
-/* End 'Basics' Styling */
-
-/* Work and volunteering experience styling */
-
-
-
-.work_position {
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.work_date {
-  float: right;
-}
-
-.work_name {
-  margin: 5px 0;
-}
-
-.courses {
-  clear: both;
-}
-
-.dissertation {
-  display: block;
-  margin-top: 1px;
-  margin-bottom: 1px;
-}
-
-#work,
-#volunteer {
-  padding-bottom: 0px;
-}
-
-#work .item,
-#volunteer .item, #education .item, #skills .item  {
-  margin: 5px 0;
-  padding-bottom: 5px;
-  border-bottom: 1px #E2E2E2 solid;
-}
-
-/* End work and volunteering */
-
-/* Skills, languages, interests and references styling */
-
-.highlights {
-  margin: 0;
-  padding: 0;
-}
-
-#skills {
-  margin-bottom: 5px;
-  padding-bottom: 0px;
-}
-
-#skills .item,
-#languages .item {
-  margin: 0 0 0px 0;
-}
-
-#interests .item {
-  margin-bottom: 0px;
-  vertical-align: top;
-}
-
-#interests .name {
-  font-weight: bold;
-}
-
-#skills {
-  overflow: hidden;
-}
-
-#languages .item,
-#interests .item,
-#skills .item {
-  display: inline-block;
-  width: 32%;
-}
-
-#education {
-  margin-top: 0px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 0px;
-}
-
-#references,
-#interests {
-  clear: both;
-}
-
-div.name {
-  margin-left: 25px;
-}
-
-.level {
-  margin-left: 25px;
-}
-
-div.name p {
-  margin: 0;
-  font-weight: bold;
-}
-
-#skills .references {
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 0px;
-}
-
-#content h2 {
-  margin: 0;
-  margin-bottom: 0px;
+  .skills-section {
+    .skills-container {
+      .item {
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+      }
+    }
+  }
 }

@@ -1,30 +1,32 @@
-<div class='header'>
-    <h1 class='header__heading'>{{name}}</h1>
-    {{#if label}}
-        <h2 class='header__heading--small'>{{label}}</h2>
-    {{/if}}
-</div>
-<div class="contact-container">
-    {{#if website}}
-        <div class="contact-container__website">
-            {{website}}
-        </div>
-    {{/if}}
-    {{#if email}}
-        <div class="contact-container__email">
-            {{email}}
-        </div>
-    {{/if}}
-    {{#if phone}}
-        <div class="contact-container__phone">
-            {{phone}}
-        </div>
-    {{/if}}
-</div>
-<div id="basics-section">
-    {{#if summary}}
-        <div class="basics-section__summary">
-            <p>{{summary}}</p>
-        </div>
-    {{/if}}
+<div class="header-container">
+  <div class='header'>
+      <h1 class='header__heading'>{{name}}</h1>
+      {{#if label}}
+          <h2 class='header__heading--small'>{{label}}</h2>
+      {{/if}}
+  </div>
+  <div class="contact-container">
+      {{#if website}}
+          <span class="contact-container__website">
+              {{website}}
+          </span>
+      {{/if}}
+      {{#if email}}
+          <span class="contact-container__email">
+              {{email}}
+          </span>
+      {{/if}}
+      {{#if phone}}
+          <span class="contact-container__phone">
+              {{phone}}
+          </span>
+      {{/if}}
+  </div>
+  <div class="basics-section">
+      {{#if summary}}
+          <div class="basics-section__summary">
+              <p>{{summary}}</p>
+          </div>
+      {{/if}}
+  </div>
 </div>

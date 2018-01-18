@@ -2,46 +2,51 @@
     <div class="content__title">Work</div>
     {{#each resume.work}}
         <div class="item">
-            {{#if company}}
-                <div class="work_name">
-                    {{company}}
-                </div>
-            {{/if}}
+          <div class="item__container">
+            <div class="item__title-container">
+              {{#if company}}
+                  <div class="work_name">
+                      {{company}}
+                  </div>
+              {{/if}}
 
-            {{#if position}}
-                <div class="work_position">
-                    {{position}}
-                </div>
-            {{/if}}
+              {{#if position}}
+                  <div class="work_position">
+                    - {{position}}
+                  </div>
+              {{/if}}
+            </div>
 
             <div class="work_date">
                 {{#if startDate}}
-                    <div class="startDate">
+                    <div class="work_date__start-date">
                         {{startDate}}
                     </div>
                 {{/if}}
                 {{#if endDate}}
-                    <div class="endDate">
-                        {{endDate}}
+                    <div class="work_date__end-date">
+                      - {{endDate}}
                     </div>
                 {{else}}
-                    <div class="endDate">
+                    <div class="work_date__end-date">
                         - Present
                     </div>
                 {{/if}}
             </div>
-
+          </div>
             {{#if summary}}
                 <div class="summary">
                     {{summary}}
                 </div>
             {{/if}}
             {{#if highlights.length}}
-                <ul class="highlights">
+              <div class="highlights">
+                <ul class="highlights__list">
                     {{#each highlights}}
                         <li>{{.}}</li>
                     {{/each}}
                 </ul>
+              </div>
             {{/if}}
         </div>
     {{/each}}

@@ -1,14 +1,14 @@
 {
   "basics": {
     "name": "Nick Scherman",
-    "label": "Web Developer",
+    "label": "Application Developer",
     "picture": "",
     "email": "n_scherman@hotmail.com",
     "phone": "(647) 459 6580",
     "website": "https://nickscherman.com",
-    "summary": "Web developer focusing on resilient application development, UI/UX design and web services.",
+    "summary": "Enterprise web developer with full stack experience skilled in front end frameworks, microservices application development, requirements gathering, communication and design.",
     "location": {
-      "address": "North Yorke",
+      "address": "",
       "postalCode": "",
       "city": "Toronto",
       "countryCode": "CA",
@@ -21,6 +21,7 @@
     }]
   },
   "work": [
+    
     {
       "company": "Seneca College",
       "position": "Course Assistant",
