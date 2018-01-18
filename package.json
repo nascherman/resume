@@ -1,14 +1,14 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "My Resume ",
+  "description": "My Resume",
   "main": "index.js",
   "scripts": {
-    "test": "resume test ./config/resume.json",
-    "build-pdf": "npm run styles && fluentcv BUILD config/resume.json to build/resume.pdf -t jsonresume-theme-class",
-    "build-pdf-html": "fluentcv BUILD config/resume.json to build/index.html -t jsonresume-theme-class",
-    "start": "onchange \"scss/**/*\" \"config/*\" \"jsonresume-theme-class/*\" -- npm run start-pdf",
-    "styles": "node-sass scss/style.scss -o build && cp build/style.css json-resume-theme-class",
+    "test": "resume test config/resume.json",
+    "build-pdf": "npm run styles && fluentcv BUILD config/resume.json to build/resume.pdf -t jsonresume-theme-personal",
+    "build-pdf-html": "fluentcv BUILD config/resume.json to build/index.html -t jsonresume-theme-personal",
+    "start": "onchange \"scss/**/*\" \"config/*\" \"theme/*\" -- npm run start-pdf",
+    "styles": "node-sass scss/style.scss -o build && cp build/style.css jsonresume-theme-personal/",
     "start-pdf": "npm run build-pdf-html && npm run styles && budo --dir build"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "fluentcv": "^1.8.1",
     "node-sass": "^4.7.2",
     "onchange": "^3.0.2",
+    "resume-cli": "^0.4.19",
     "sass-lint": "^1.12.1",
     "sass-lint-config-entoj": "^1.0.1",
     "wkhtmltopdf": "^0.3.3"

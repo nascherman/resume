@@ -3,45 +3,34 @@
 
 body {
   padding-top: 0px;
-  font-size: 14px;
+  font-size: 2em;
   font-family: 'Helvetica', sans-serif;
   margin-bottom: 0px;
-}
 
-a {
-  color: #000;
-}
-
-a:visited {
-  color: #000;
-}
-
-a:hover {
-  color: #000;
+  a,
+  a:visited,
+  a:hover{
+    color: #000;
+  }
 }
 
 .header {
   display: inline-block;
-  width: 49%;
   text-align: left;
 
   &__heading {
     color: #000;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    max-width: 700px;
     margin: 0;
     font-weight: bold;
     text-align: left;
     vertical-align: bottom;
 
     &--small {
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
       font-weight: normal;
       color: #0f0f0f;
       margin: 0;
-      font-size: 1em;
       text-align: left;
     }
   }
@@ -50,8 +39,8 @@ a:hover {
 .contact-container {
   margin: 0;
   text-align: right;
-  width: 49%;
-  font-size: 1em;
+  //width: 49%;
+  //font-size: 1em;
   display: inline-block;
 
   &__website,
@@ -80,7 +69,7 @@ a:hover {
 }
 
 .content {
-  max-width: 700px;
+  //width: 100%;
   padding: 0;
   margin: 0 auto;
 

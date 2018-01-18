@@ -1,0 +1,15 @@
+{
+  "name": "jsonresume-theme-personal",
+  "main": "index.js",
+  "version": "0.1.1",
+  "description": "theme",
+  "author": "Nick Scherman",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nascherman/jsonresume-theme-personal"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}
