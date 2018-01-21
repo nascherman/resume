@@ -188,22 +188,22 @@ table {
 
 @font-face {
   font-family: 'Helvetica';
-  src: url("/fonts/Roboto-Regular.ttf");
-  font-weight: normal; }
+  src: url("./fonts/Helvetica Neu Bold.ttf");
+  font-weight: 400; }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url("/fonts/Roboto-Medium.ttf");
-  font-weight: bold; }
+  src: url("./fonts/HelveticaNeue.ttf");
+  font-weight: 700; }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url("/fonts/Roboto-Light.ttf");
-  font-weight: italic; }
+  src: url("./fonts/HelveticaNeueLt.ttf");
+  font-weight: 100; }
 
 body {
-  padding: 40px 40px;
-  font-size: 1.3em;
+  padding: 80px 40px 80px 40px;
+  font-size: 1.7em;
   font-family: 'Helvetica', sans-serif;
   margin-bottom: 0px; }
   body a,
@@ -220,11 +220,11 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
     text-align: left;
     vertical-align: bottom; }
     .header-container .header__heading--small {
-      font-weight: normal;
+      font-weight: 100;
       color: #0f0f0f;
       margin: 0;
       text-align: left; }
@@ -241,20 +241,20 @@ body {
     margin-bottom: 0px;
     display: inline-block;
     width: 50%; }
-  .header-container .contact-container .basics-section {
-    margin-bottom: 5px;
-    border-top: 1px #E2E2E2 solid;
-    border-bottom: 1px #E2E2E2 solid; }
-    .header-container .contact-container .basics-section h3 {
-      margin-top: 0em;
-      margin-bottom: 0px; }
-    .header-container .contact-container .basics-section__summary {
-      padding-top: 0px;
-      clear: both; }
 
 .header-container .basics-section {
+  margin-bottom: 5px;
+  border-top: 1px #E2E2E2 solid;
+  border-bottom: 1px #E2E2E2 solid;
   width: 82%;
   text-align: justify; }
+  .header-container .basics-section h3 {
+    margin-top: 0em;
+    margin-bottom: 0px; }
+  .header-container .basics-section__summary {
+    padding-top: 0px;
+    clear: both;
+    font-weight: 100; }
 
 .content {
   padding: 0;
@@ -264,8 +264,11 @@ body {
     padding: 10px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.3em; }
+    .content__title--footer {
+      margin-top: 400px;
+      margin-bottom: 0; }
   .content .work-section__work_date, .content .work-section__work_position, .content .work-section__work_website, .content .work-section__work_institution, .content .work-section__work_study_date, .content .work-section__work_qualification,
   .content .education-section__work_date,
   .content .education-section__work_position,
@@ -275,43 +278,66 @@ body {
   .content .education-section__work_qualification {
     margin-bottom: 0px;
     display: inline-block;
-    width: 30%;
-    font-weight: bold; }
-  .content .work-section .item__container,
-  .content .education-section .item__container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px 0; }
-  .content .work-section .item__title-container,
-  .content .education-section .item__title-container {
-    flex: 40%; }
-    .content .work-section .item__title-container .work_name,
-    .content .work-section .item__title-container .work_position,
-    .content .education-section .item__title-container .work_name,
-    .content .education-section .item__title-container .work_position {
-      display: inline-block; }
-    .content .work-section .item__title-container .work_position,
-    .content .education-section .item__title-container .work_position {
-      font-weight: bold; }
-    .content .work-section .item__title-container .work_name,
-    .content .education-section .item__title-container .work_name {
-      text-transform: uppercase; }
-  .content .work-section .item .work_date__end-date, .content .work-section .item .work_date__start-date,
-  .content .education-section .item .work_date__end-date,
-  .content .education-section .item .work_date__start-date {
-    display: inline-block; }
-  .content .work-section .item .summary,
-  .content .education-section .item .summary {
-    width: 82%;
-    text-align: justify; }
-  .content .work-section .item .highlights__list,
-  .content .education-section .item .highlights__list {
-    padding: 0 0 0 40px;
-    margin: 0.25em 0; }
-    .content .work-section .item .highlights__list li,
-    .content .education-section .item .highlights__list li {
-      margin-left: 10px; }
+    width: 30%; }
+  .content .work-section .item,
+  .content .education-section .item {
+    border-bottom: 1px solid #D0D0D0;
+    padding-bottom: 6px; }
+    .content .work-section .item:last-child,
+    .content .education-section .item:last-child {
+      margin-bottom: 100px; }
+    .content .work-section .item__container,
+    .content .education-section .item__container {
+      padding: 15px 0; }
+    .content .work-section .item__title-container,
+    .content .education-section .item__title-container {
+      display: inline-block;
+      width: 49%; }
+      .content .work-section .item__title-container .work_name,
+      .content .work-section .item__title-container .work_position,
+      .content .education-section .item__title-container .work_name,
+      .content .education-section .item__title-container .work_position {
+        display: inline-block; }
+      .content .work-section .item__title-container .work_position,
+      .content .education-section .item__title-container .work_position {
+        font-weight: 400; }
+      .content .work-section .item__title-container .work_name,
+      .content .education-section .item__title-container .work_name {
+        font-weight: 100;
+        text-transform: uppercase; }
+    .content .work-section .item .work_date,
+    .content .education-section .item .work_date {
+      width: 50%;
+      text-align: right;
+      display: inline-block;
+      font-weight: 100; }
+      .content .work-section .item .work_date__end-date, .content .work-section .item .work_date__start-date,
+      .content .education-section .item .work_date__end-date,
+      .content .education-section .item .work_date__start-date {
+        display: inline-block; }
+    .content .work-section .item .summary,
+    .content .education-section .item .summary {
+      width: 82%;
+      text-align: justify;
+      font-weight: 100; }
+    .content .work-section .item .highlights,
+    .content .education-section .item .highlights {
+      width: 82%;
+      font-size: 0.95em;
+      font-weight: 100; }
+      .content .work-section .item .highlights__list,
+      .content .education-section .item .highlights__list {
+        padding: 0 0 0 40px;
+        margin: 0.25em 0; }
+        .content .work-section .item .highlights__list li,
+        .content .education-section .item .highlights__list li {
+          margin-left: 10px; }
   .content .skills-section .skills-container .item {
     display: inline-block;
     width: 32%;
-    vertical-align: top; }
+    vertical-align: top;
+    min-height: 400px; }
+    .content .skills-section .skills-container .item__name {
+      font-weight: 400; }
+    .content .skills-section .skills-container .item__keywords {
+      font-weight: 100; }

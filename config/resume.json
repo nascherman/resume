@@ -21,17 +21,19 @@
     }]
   },
   "work": [
-    
     {
-      "company": "Seneca College",
-      "position": "Course Assistant",
-      "website": "https://petermcintyre.com/dps907/",
-      "startDate": "2016-09-01",
-      "endDate": "2016-12-20",
-      "summary": "DPS907/WSA500 is a class focusing on developing resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web services including Model/Resource relationships, Security and Deployment of web APIs.",
+      "company": "CIBC",
+      "position": "Intermediate Application Developer",
+      "website": "",
+      "startDate": "2017-02-01",
+      "endDate": "Current",
+      "summary": "Development lead for a banking application. Working in one of the bank's first agile teams. Extensive requirements gathering, documenting, development and teamwork. Developing front end components (using Angular), microservices (Nodejs) and updating legacy applications (Portals) to work with the new technology.",
       "highlights": [
-        "Marked student assignments providing comments/analysis",
-        "Provided feedback and input on the development of future course material"
+        "Full stack development using future looking design patterns (JS frameworks, microservices)",
+        "Requirements gathering, solutioning and communicating directly with business decision makers",
+        "Responsible for managing daily builds to the SIT environment producing release notes and managing Jira for the development team",
+        "Responsible for performing code reviews and maintaining overall code quality for project release candidate",
+        "Maintenence and updating of legacy portal applications"
       ]
     },
     {
@@ -43,10 +45,8 @@
       "summary": "Jam3 is a production company delivering unique digital experiences with a focus and innovative UI/UX. Developers work with designers to create unique interactive experiences through web browsers and other mediums.",
       "highlights": [
         "Developed user interfaces and development frameworks for new and existing projects",
-        "Created extensible libraries using NPM for use in projects",
-        "Libraries and Frameworks like React/Redux, Threejs/Webgl",
-        "Created Electron cross-platform applications and Chrome extensions",
-        "Development native applications with Crosswalk and React native",
+        "Created extensible libraries using NPM for use in projects (React/Redux, Threejs/Webgl)",
+        "Created Electron cross-platform applications and Chrome extensions and native applications with Crosswalk and React native",
         "Development lead on small project for Canadian Blood services",
         "Research and development creating Machine-learning web services.",
         "Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
@@ -67,16 +67,15 @@
       ]
     },
     {
-      "company": "Independent",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-05-01",
-      "endDate": "2015-05-01",
-      "summary": "",
+      "company": "Seneca College",
+      "position": "Course Assistant",
+      "website": "https://petermcintyre.com/dps907/",
+      "startDate": "2016-09-01",
+      "endDate": "2016-12-20",
+      "summary": "DPS907/WSA500 is a class focusing on developing resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web services including Model/Resource relationships, Security and Deployment of web APIs.",
       "highlights": [
-        "Services included, development, hosting and SEO using Google Analytics, Adwords etc.",
-        "Desktop/Mobile design. Focused on best practices and informed design choices.",
-        "Backend database services using Django and interaction with external APIs"
+        "Marked student assignments providing comments/analysis",
+        "Provided feedback and input on the development of future course material"
       ]
     },
     {
@@ -95,7 +94,7 @@
     {
       "institution": "Seneca College",
       "area": "Computer Programming and Analysis",
-      "studyType": "Advanced Diploma",
+      "studyType": "Advanced Diploma - Honors",
       "startDate": "2013-09-01",
       "endDate": "2016-12-20",
       "gpa": "3.7",
@@ -103,12 +102,12 @@
     },
     {
       "institution": "University of Waterloo",
-      "area": "Political Science",
+      "area": "Bachelor of arts",
       "studyType": "Degree",
       "startDate": "2008-09-01",
       "endDate": "2012-01-01",
       "gpa": "3.0",
-      "summary": "The University of Waterloo Political Science program provides a strong foundation on the analysis of essential political theories and concepts, their application to real and historical events as well as providing a strong foundation for research and critical thinking skills."
+      "summary": "The University of Waterloo Arts program provides a strong foundation for research and critical thinking skills as well as business communication skills that are applicable on a daily basis in my work environment"
     }
   ],
   "skills": [
@@ -116,39 +115,11 @@
     "name": "Javascript",
     "level": "Expert",
     "keywords": [
-      "React/Angularjs Libraries and Frameworks",
-      "Build tools like Grunt, Gulp and Browserify",
-      "Modern ES6 and Babel syntax",
-      "Single Page Applications",
-      "Data visualizations and experiences with D3.js and WebGL",
-      "XHR/Ajax",
-      "NPM library contributor"
+      "JS libraries and frameworks including React and AngularJS/Angular4",
+      "Project build tools like Grunt, Gulp and Browserify",
+      "SPA business applications",
+      "Data visualizations and experiences with D3.js and WebGL"
     ]
-    },
-    {
-      "name": "Asp.Net",
-      "level": "Intermediate",
-      "keywords": [
-        "Web services using Restful architecture",
-        "Web Apps using Razor syntax, JavaScript and Jquery",
-        "Asp.Net MVC design pattern best-practices",
-        "Microsoft Azure deployment",
-        "OAuth2/Tokenized security"
-      ]
-    },
-    {
-      "name": "General Web Development",
-      "level": "Intermediate",
-      "keywords": [
-        "Web servers with Express and NGINX",
-        "Compiled stylesheets CSS with LESS/SASS",
-        "UI/UX",
-        "API testing with Postman",
-        "Real-time applications with Socket.IO",
-        "Leveraging Google services (Analytics, Adwords, Cloud services)",
-        "Amazon Web Services (S3)",
-        "Microservices with Heroku and Docker"
-      ]
     },
     {
       "name": "Server side programming",
@@ -156,18 +127,37 @@
       "keywords": [
         "Rest API creation",
         "OAuth2 security",
-        "Abstraction, interfaces and inheritance best practices",
         "Database design in Postgres and MySQL",
-        "Django, Flask, PHP"
+        "Java Spring, Websphere Portal, Python Django, Flask, C# ASP.NET, PHP"
       ]
     },
     {
-      "name": "Development",
+      "name": "Continous integration",
       "level": "Expert",
       "keywords": [
-        "Proficient in C++, Java, JavaScript, python and shell scripting",
-        "Workflows in Sublime, Visual Studio, and Eclipse",
-        "Professional expertise in Linux, Mac, and Windows"
+        "Jenkins jobs, deployment and management",
+        "Creating and managing containerized docker instances",
+        "General management of deployment environments"
+      ]
+    },
+    {
+      "name": "Agile/Scrum",
+      "level": "Intermediate",
+      "keywords": [
+        "Most comfortable working in a daily scrum environment",
+        "Change leader at CIBC practicing agile methodology",
+        "Jira, Confluence and Bitbucket"
+      ]
+    },
+    {
+      "name": "General Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Managing web and portal servers",
+        "UI/UX design",
+        "REST and web services API development and testing",
+        "Real-time applications",
+        "Analytics"
       ]
     }
   ],

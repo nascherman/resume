@@ -2,10 +2,10 @@
 @import 'fonts';
 
 body {
-  padding: 40px 40px;
-  font-size: 1.3em;
+  padding: 80px 40px 80px 40px;
+  font-size: 1.7em;
   font-family: 'Helvetica', sans-serif;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 
   a,
   a:visited,
@@ -26,12 +26,12 @@ body {
       text-transform: uppercase;
       letter-spacing: 0.1em;
       margin: 0;
-      font-weight: bold;
+      font-weight: 400;
       text-align: left;
       vertical-align: bottom;
 
       &--small {
-        font-weight: normal;
+        font-weight: 100;
         color: #0f0f0f;
         margin: 0;
         text-align: left;
@@ -51,40 +51,33 @@ body {
     &__website,
     &__email,
     &__phone {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       display: inline-block;
       width: 50%;
-    }
-
-    .basics-section {
-      margin-bottom: 5px;
-      border-top: 1px #E2E2E2 solid;
-      border-bottom: 1px #E2E2E2 solid;
-
-      h3 {
-        margin-top: 0em;
-        margin-bottom: 0px;
-      }
-
-      &__summary {
-        padding-top: 0px;
-        clear: both;
-      }
     }
   }
 
   .basics-section {
+    margin-bottom: 5px;
+    border-top: 1px #E2E2E2 solid;
+    border-bottom: 1px #E2E2E2 solid;
     width: 82%;
     text-align: justify;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__summary {
+      padding-top: 0;
+      clear: both;
+      font-weight: 100;
+    }
   }
 }
 
-
-
-
-
 .content {
-  //width: 100%;
   padding: 0;
   margin: 0 auto;
 
@@ -93,8 +86,13 @@ body {
     padding: 10px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.3em;
+
+    &--footer {
+      margin-top: 400px;
+      margin-bottom: 0;
+    }
   }
 
   .work-section,
@@ -105,22 +103,26 @@ body {
     &__work_institution,
     &__work_study_date,
     &__work_qualification {
-      margin-bottom: 0px;
+      margin-bottom: 0;
       display: inline-block;
       width: 30%;
-      font-weight: bold;
     }
 
     .item {
+      border-bottom: 1px solid #D0D0D0;
+      padding-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 100px;
+      }
 
       &__container {
-        display: flex;
-        flex-wrap: wrap;
         padding: 15px 0;
       }
 
       &__title-container {
-        flex: 40%;
+        display: inline-block;
+        width: 49%;
 
         .work_name,
         .work_position {
@@ -128,15 +130,20 @@ body {
         }
 
         .work_position {
-          font-weight: bold;
+          font-weight: 400;
         }
 
         .work_name {
+          font-weight: 100;
           text-transform: uppercase;
         }
       }
 
       .work_date {
+        width: 50%;
+        text-align: right;
+        display: inline-block;
+        font-weight: 100;
 
         &__end-date,
         &__start-date {
@@ -146,9 +153,13 @@ body {
       .summary {
         width: 82%;
         text-align: justify;
+        font-weight: 100;
       }
 
       .highlights {
+        width: 82%;
+        font-size: 0.95em;
+        font-weight: 100;
 
         &__list {
           padding: 0 0 0 40px;
@@ -168,6 +179,15 @@ body {
         display: inline-block;
         width: 32%;
         vertical-align: top;
+        min-height: 400px;
+
+        &__name {
+          font-weight: 400;
+        }
+
+        &__keywords {
+          font-weight: 100;
+        }
       }
     }
   }

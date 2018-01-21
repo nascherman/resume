@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'Helvetica';
-  src: url('/fonts/Roboto-Regular.ttf');
-  font-weight: normal;
+  src: url('./fonts/Helvetica\ Neu\ Bold.ttf');
+  font-weight: 400;
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('/fonts/Roboto-Medium.ttf');
-  font-weight: bold;
+  src: url('./fonts/HelveticaNeue.ttf');
+  font-weight: 700;
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('/fonts/Roboto-Light.ttf');
-  font-weight: italic;
+  src: url('./fonts/HelveticaNeueLt.ttf');
+  font-weight: 100;
 }
