@@ -1,0 +1,53 @@
+<div class="education-section">
+    <div class="content__title">Education</div>
+    {{#each resume.education}}
+        <div class="item">
+          <div class="item__container">
+            <div class="item__title-container">
+            {{#if institution}}
+                <div class="institution">
+                    {{institution}}
+                </div>
+            {{/if}}
+          </div>
+
+            <div class="work_date">
+                {{#if startDate}}
+                    <div class="work_date__start-date">
+                        {{startDate}}
+                    </div>
+                {{/if}}
+                {{#if endDate}}
+                    <div class="work_date__end-date">
+                        - {{endDate}}
+                    </div>
+                {{else}}
+                    <div class="work_date__end-date">
+                        - Present
+                    </div>
+                {{/if}}
+            </div>
+
+            {{#if studyType}}
+                <div class="summary">
+                    <b>{{area}}</b> - {{studyType}}
+                </div>
+            {{/if}}
+
+            {{#if summary}}
+                <div class="summary">
+                    {{summary}}
+                </div>
+            {{/if}}
+
+            {{#if courses.length}}
+                <p>Courses: </p>
+                <ul class="courses">
+                    {{#each courses}}
+                        <li>{{.}}</li>
+                    {{/each}}
+                </ul>
+            {{/if}}
+        </div>
+    {{/each}}
+</div>

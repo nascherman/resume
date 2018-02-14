@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+        <title>{{#resume.basics}}{{name}} - CV{{/resume.basics}}</title>
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+        {{> header resume.basics}}
+        <div class="content">
+            {{#if resume.work.length}}
+            {{> work work=resume.work}}
+            {{/if}}
+
+            {{#if resume.education.length}}
+            {{> education education=resume.education}}
+            {{/if}}
+
+            {{#if resume.skills.length}}
+            {{> skills skills=resume.skills}}
+            {{/if}}
+						<div class="content__title content__title--footer">References available upon request</div>
+        </div>
+	</body>
+</html>

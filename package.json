@@ -1,16 +1,16 @@
 {
   "name": "resume",
   "version": "1.0.0",
-  "description": "My Resume ",
+  "description": "My Resume",
   "main": "index.js",
   "scripts": {
-    "test": "resume test ./config/resume.json",
-    "start-html": "npm run build-html && budo --dir app",
-    "start-pdf": "fluentcv BUILD config/resume.json to pdf/index.html -t jsonresume-theme-class && budo --dir pdf",
-    "pdf": "onchange 'config/*' 'jsonresume-theme-class/*' -- npm run start-pdf",
-    "build-pdf-html": "fluentcv BUILD config/resume.json to app/assets/resume/nicholas-scherman-resume.pdf -t jsonresume-theme-class && npm run build-html",
-    "html": "npm run build-pdf-html && onchange 'config/*' 'jsonresume-theme-eloquent/*'  -- npm run start-html",
-    "build-html": "node eloquent.js"
+    "test": "resume test config/resume.json",
+    "build-pdf": "npm run styles && fluentcv BUILD config/resume.json to build/resume.pdf -t jsonresume-theme-personal",
+    "build-pdf-html": "fluentcv BUILD config/resume.json to build/index.html -t jsonresume-theme-personal",
+    "start": "onchange \"scss/*\" \"config/*\" \"theme/*\" -- npm run start-pdf",
+    "styles": "node-sass scss/style.scss -o build && cp build/style.css jsonresume-theme-personal/ && npm run copy-fonts",
+    "start-pdf": "npm run build-pdf-html && npm run styles && budo --dir build",
+    "copy-fonts": "cp scss/fonts/** build/fonts/ && cp scss/fonts/** jsonresume-theme-personal/fonts"
   },
   "repository": {
     "type": "git",
@@ -27,27 +27,19 @@
   },
   "homepage": "https://github.com/nascherman/resume#readme",
   "devDependencies": {
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "babelify": "^7.3.0",
-    "browserify": "^13.1.1",
     "budo": "^9.2.2",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "fluentcv": "^1.8.1",
-    "less-css-stream": "^1.0.0",
-    "less-plugin-autoprefix": "^1.5.1",
+    "node-sass": "^4.7.2",
     "onchange": "^3.0.2",
-    "resume-cli": "^0.4.14",
-    "uglify-js": "^2.7.4",
+    "resume-cli": "^0.4.19",
+    "sass-lint": "^1.12.1",
+    "sass-lint-config-entoj": "^1.0.1",
     "wkhtmltopdf": "^0.3.3"
   },
   "dependencies": {
-    "async": "^2.1.4",
-    "email-scramble": "^2.0.1",
-    "handlebars": "^4.0.6",
-    "moment": "^2.17.0",
-    "optimist": "^0.6.1",
-    "source-map": "^0.5.6"
+    "handlebars": "^4.0.6"
   }
 }
