@@ -7,7 +7,7 @@
     "test": "resume test config/resume.json",
     "build-pdf": "npm run styles && fluentcv BUILD config/resume.json to build/resume.pdf -t jsonresume-theme-personal",
     "build-pdf-html": "fluentcv BUILD config/resume.json to build/index.html -t jsonresume-theme-personal",
-    "start": "onchange \"scss/*\" \"config/*\" \"theme/*\" -- npm run start-pdf",
+    "start": "onchange \"scss/*\" \"config/*\" \"jsonresume-theme-personal/*\" -e \"jsonresume-theme-personal/style.css\" -i -- npm run start-pdf",
     "styles": "node-sass scss/style.scss -o build && cp build/style.css jsonresume-theme-personal/ && npm run copy-fonts",
     "start-pdf": "npm run build-pdf-html && npm run styles && budo --dir build",
     "copy-fonts": "cp scss/fonts/** build/fonts/ && cp scss/fonts/** jsonresume-theme-personal/fonts"

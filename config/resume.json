@@ -6,7 +6,7 @@
     "email": "n_scherman@hotmail.com",
     "phone": "(647) 459 6580",
     "website": "https://nickscherman.com",
-    "summary": "Enterprise web developer with full stack experience skilled in front end frameworks, microservices application development, requirements gathering, communication and design.",
+    "summary": "Enterprise web developer. Requirements gathering, architecture, design, development and deployment of web applications.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -14,11 +14,13 @@
       "countryCode": "CA",
       "region": "Ontario"
     },
-    "profiles": [{
-      "network": "Linkedin",
-      "username": "Nick Scherman",
-      "url": "https://www.linkedin.com/in/nick-scherman-47612039"
-    }]
+    "profiles": [
+      {
+        "network": "Linkedin",
+        "username": "Nick Scherman",
+        "url": "https://www.linkedin.com/in/nick-scherman-47612039"
+      }
+    ]
   },
   "work": [
     {
@@ -27,14 +29,7 @@
       "website": "",
       "startDate": "2017-02-01",
       "endDate": "Current",
-      "summary": "Development lead for a banking application. Working in one of the bank's first agile teams. Extensive requirements gathering, documenting, development and teamwork. Developing front end components (using Angular), microservices (Nodejs) and updating legacy applications (Portals) to work with the new technology.",
-      "highlights": [
-        "Full stack development using future looking design patterns (JS frameworks, microservices)",
-        "Requirements gathering, solutioning and communicating directly with business decision makers",
-        "Responsible for managing daily builds to the SIT environment producing release notes and managing Jira for the development team",
-        "Responsible for performing code reviews and maintaining overall code quality for project release candidate",
-        "Maintenence and updating of legacy portal applications"
-      ]
+      "summary": "Development lead for an integrated banking dashboard. Working in one of the bank's first agile teams.  Developing front end components (using Angular), back end microservices (Nodejs), CMS and maintaining and updating legacy portals. App featured interfacing with third party applications."
     },
     {
       "company": "Jam3",
@@ -42,14 +37,9 @@
       "website": "https://jam3.com",
       "startDate": "2016-01-01",
       "endDate": "2016-09-01",
-      "summary": "Jam3 is a production company delivering unique digital experiences with a focus and innovative UI/UX. Developers work with designers to create unique interactive experiences through web browsers and other mediums.",
+      "summary": "UI and microservices developer at a creative media company. Worked on team projects on scrum teams as well as on a solo dev project. Working with product owners, designers and stakeholders on unique applications and websites involving incredible creativity.",
       "highlights": [
-        "Developed user interfaces and development frameworks for new and existing projects",
-        "Created extensible libraries using NPM for use in projects (React/Redux, Threejs/Webgl)",
-        "Created Electron cross-platform applications and Chrome extensions and native applications with Crosswalk and React native",
-        "Development lead on small project for Canadian Blood services",
-        "Research and development creating Machine-learning web services.",
-        "Significant contributions to many projects including Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
+        "projects include Mustang Customizer (www.mustangcustomizer.com) and Vikings (vikings.history.co.uk)"
       ]
     },
     {
@@ -58,11 +48,8 @@
       "website": "https://www.cibc.com/ca/newhrwelcome/our-structure.html",
       "startDate": "2015-05-01",
       "endDate": "2015-09-01",
-      "summary": "Intermediate Application developers at CIBC are responsible for working with existing applications and providing solutions to application issues as they arise as well as maintaining and updating application code.",
+      "summary": "Developed features of a legacy J2ee servlet application. Tested and created migration instructions for the entire application from Websphere 6.1 to 8.5",
       "highlights": [
-        "Implemented features in java for update of internal application.",
-        "Created runbooks for the migration of the Development and User-Acceptance Testing (UAT) application servers  including gap-analysis and solutions for software updated with the migration.",
-        "Management of development and UAT servers",
         "Honourable Mention for the Summer 2015 student achievement award."
       ]
     },
@@ -72,10 +59,11 @@
       "website": "https://petermcintyre.com/dps907/",
       "startDate": "2016-09-01",
       "endDate": "2016-12-20",
-      "summary": "DPS907/WSA500 is a class focusing on developing resilient and secure RESTful web services using C# and asp.net. The course focuses on the foundations of web services including Model/Resource relationships, Security and Deployment of web APIs.",
+      "summary": "Course marker for foundational web services course (DPS907). Marked student assignments and gave feedback on future course material",
       "highlights": [
-        "Marked student assignments providing comments/analysis",
-        "Provided feedback and input on the development of future course material"
+        "REST service fundamentals",
+        "Cloud deployment with Azure",
+        "Oauth 2"
       ]
     },
     {
@@ -84,10 +72,8 @@
       "website": "http://www.wilkinsonchutes.ca/",
       "startDate": "2012-05-01",
       "endDate": "2013-09-01",
-      "summary": "",
-      "highlights": [
-        "Metal fabrication and blue print interpretation"
-      ]
+      "summary": "MIG welder at a custom fabrication shop. Created hydraulic machinery.",
+      "highlights": []
     }
   ],
   "education": [
@@ -98,12 +84,12 @@
       "startDate": "2013-09-01",
       "endDate": "2016-12-20",
       "gpa": "3.7",
-      "summary": "The Seneca College school of ICT has a well developed and reputable programming department that focuses on teaching a range of fundamental and advanced programming techniques including data structures and algorithms, database design and general and specialized software development. Students have the opportunity to take part in co operative education and to contribute to open source technology at the prestigious Centre for Development of Open Technology."
+      "summary": "The Seneca College school of ICT has an established programming department that teaches fundamental and advanced programming techniques including data structures and algorithms, database design, multithreading and web application development. The program offers co op and has a low graduation rate from an uncompromising curriculum."
     },
     {
       "institution": "University of Waterloo",
-      "area": "Bachelor of arts",
-      "studyType": "Degree",
+      "area": "General Arts",
+      "studyType": "BA Degree",
       "startDate": "2008-09-01",
       "endDate": "2012-01-01",
       "gpa": "3.0",
@@ -112,57 +98,52 @@
   ],
   "skills": [
     {
-    "name": "Javascript",
-    "level": "Expert",
-    "keywords": [
-      "JS libraries and frameworks including React and AngularJS/Angular4",
-      "Project build tools like Grunt, Gulp and Browserify",
-      "SPA business applications",
-      "Data visualizations and experiences with D3.js and WebGL"
-    ]
+      "name": "UI",
+      "keywords": [
+        "Angular2/AngularJS, React, JQuery",
+        "Network driven applications",
+        "Data visualizations and WebGL",
+        "Karma and Mocha TDD"
+      ]
     },
     {
-      "name": "Server side programming",
-      "level": "Intermediate",
+      "name": "Services",
       "keywords": [
-        "Rest API creation",
-        "OAuth2 security",
-        "Database design in Postgres and MySQL",
-        "Java Spring, Websphere Portal, Python Django, Flask, C# ASP.NET, PHP"
+        "Nodejs, Java, Python",
+        "OAuth2",
+        "Relational databases",
+        "Gateways and security"
       ]
     },
     {
       "name": "Continous integration",
-      "level": "Expert",
       "keywords": [
-        "Jenkins jobs, deployment and management",
-        "Creating and managing containerized docker instances",
-        "General management of deployment environments"
+        "Jenkins",
+        "Daily builds",
+        "Logging infrastructure"
       ]
     },
     {
-      "name": "Agile/Scrum",
-      "level": "Intermediate",
+      "name": "Agile",
       "keywords": [
-        "Most comfortable working in a daily scrum environment",
-        "Change leader at CIBC practicing agile methodology",
-        "Jira, Confluence and Bitbucket"
+        "Daily Scrums",
+        "Development, versioning and documentation"
       ]
     },
     {
-      "name": "General Web Development",
-      "level": "Intermediate",
+      "name": "Technical interests",
       "keywords": [
-        "Managing web and portal servers",
-        "UI/UX design",
-        "REST and web services API development and testing",
+        "Good UI/UX design",
         "Real-time applications",
-        "Analytics"
+        "Animation and 3D applications",
+        "AI"
       ]
     }
   ],
-  "references": [{
-    "name": "References available upon request.",
-    "reference": ""
-  }]
+  "references": [
+    {
+      "name": "Something",
+      "reference": ""
+    }
+  ]
 }

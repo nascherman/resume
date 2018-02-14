@@ -1,24 +1,52 @@
 @import 'normalize';
 @import 'fonts';
 
+$max-document-width: 811px;
+$max-document-width-print: 1500px;
+$text-content-percent: 75%;
+
+@mixin list-style($top: 7px, $left: -15px) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  content: '';
+  background-color: black;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
 body {
-  padding: 80px 40px 80px 40px;
-  font-size: 1.7em;
+  padding: 40px;
+  font-size: 1em;
   font-family: 'Helvetica', sans-serif;
   margin-bottom: 0;
+  max-width: $max-document-width;
+  margin: auto;
+  text-align: justify;
 
   a,
   a:visited,
-  a:hover{
+  a:hover {
     color: #000;
+  }
+
+  li {
+    position: relative;
+    list-style: none;
+
+    &::before {
+      @include list-style();
+    }
   }
 }
 
 .header-container {
-
+  display: flex;
+  flex-wrap: wrap;
   .header {
     text-align: left;
-    width: 35%;
+    width: 49%;
     display: inline-block;
 
     &__heading {
@@ -42,7 +70,7 @@ body {
   .contact-container {
     margin: 0;
     text-align: right;
-    width: 63%;
+    width: 50%;
     line-height: 1.4em;
     font-size: 1.1em;
     display: inline-block;
@@ -54,15 +82,16 @@ body {
       margin-bottom: 0;
       display: inline-block;
       width: 50%;
+      font-weight: 100;
     }
   }
 
   .basics-section {
-    margin-bottom: 5px;
+    margin-top: 5px;
     border-top: 1px #E2E2E2 solid;
     border-bottom: 1px #E2E2E2 solid;
-    width: 82%;
-    text-align: justify;
+    width: 100%;
+    text-align: center;
 
     h3 {
       margin-top: 0;
@@ -70,7 +99,7 @@ body {
     }
 
     &__summary {
-      padding-top: 0;
+      padding: 0 13%;
       clear: both;
       font-weight: 100;
     }
@@ -83,14 +112,12 @@ body {
 
   &__title {
     background: #D0D0D0;
-    padding: 10px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1em;
 
     &--footer {
-      margin-top: 400px;
       margin-bottom: 0;
     }
   }
@@ -113,11 +140,11 @@ body {
       padding-bottom: 6px;
 
       &:last-child {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
       }
 
       &__container {
-        padding: 15px 0;
+        padding: 5px 0 0 0;
       }
 
       &__title-container {
@@ -130,11 +157,11 @@ body {
         }
 
         .work_position {
-          font-weight: 400;
+          font-weight: 100;
         }
 
         .work_name {
-          font-weight: 100;
+          font-weight: 400;
           text-transform: uppercase;
         }
       }
@@ -151,13 +178,12 @@ body {
         }
       }
       .summary {
-        width: 82%;
-        text-align: justify;
+        width: $text-content-percent;
         font-weight: 100;
       }
 
       .highlights {
-        width: 82%;
+        width: $text-content-percent;
         font-size: 0.95em;
         font-weight: 100;
 
@@ -174,19 +200,63 @@ body {
   }
 
   .skills-section {
+    border-bottom: 1px solid #D0D0D0;
+
     .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+
       .item {
-        display: inline-block;
-        width: 32%;
+        width: 19%;
+        margin: auto;
+        padding: 2px;
         vertical-align: top;
-        min-height: 400px;
+        min-height: 195px;
+        text-align: left;
+        border: 0;
 
         &__name {
           font-weight: 400;
+
+          p {
+            padding: 5px 0;
+            margin: 0;
+          }
         }
 
         &__keywords {
           font-weight: 100;
+          padding: 0 15px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  body {
+    max-width: $max-document-width-print;
+    font-size: 1.7em;
+
+    li {
+      position: relative;
+      list-style: none;
+
+      &::before {
+        @include list-style(14px, -30px);
+      }
+    }
+
+    .content .skills-section {
+      .skills-container {
+        display: block;
+        .item {
+          display: inline-block;
+
+          &__keywords {
+            padding: 0 30px;
+          }
         }
       }
     }

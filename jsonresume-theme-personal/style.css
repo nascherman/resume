@@ -202,72 +202,87 @@ table {
   font-weight: 100; }
 
 body {
-  padding: 80px 40px 80px 40px;
-  font-size: 1.7em;
+  padding: 40px;
+  font-size: 1em;
   font-family: 'Helvetica', sans-serif;
-  margin-bottom: 0px; }
+  margin-bottom: 0;
+  max-width: 811px;
+  margin: auto;
+  text-align: justify; }
   body a,
   body a:visited,
   body a:hover {
     color: #000; }
+  body li {
+    position: relative;
+    list-style: none; }
+    body li::before {
+      position: absolute;
+      top: 7px;
+      left: -15px;
+      content: '';
+      background-color: black;
+      border-radius: 50%;
+      width: 5px;
+      height: 5px; }
 
-.header-container .header {
-  text-align: left;
-  width: 35%;
-  display: inline-block; }
-  .header-container .header__heading {
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin: 0;
-    font-weight: 400;
+.header-container {
+  display: flex;
+  flex-wrap: wrap; }
+  .header-container .header {
     text-align: left;
-    vertical-align: bottom; }
-    .header-container .header__heading--small {
-      font-weight: 100;
-      color: #0f0f0f;
+    width: 49%;
+    display: inline-block; }
+    .header-container .header__heading {
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       margin: 0;
-      text-align: left; }
-
-.header-container .contact-container {
-  margin: 0;
-  text-align: right;
-  width: 63%;
-  line-height: 1.4em;
-  font-size: 1.1em;
-  display: inline-block;
-  vertical-align: top; }
-  .header-container .contact-container__website, .header-container .contact-container__email, .header-container .contact-container__phone {
-    margin-bottom: 0px;
+      font-weight: 400;
+      text-align: left;
+      vertical-align: bottom; }
+      .header-container .header__heading--small {
+        font-weight: 100;
+        color: #0f0f0f;
+        margin: 0;
+        text-align: left; }
+  .header-container .contact-container {
+    margin: 0;
+    text-align: right;
+    width: 50%;
+    line-height: 1.4em;
+    font-size: 1.1em;
     display: inline-block;
-    width: 50%; }
-
-.header-container .basics-section {
-  margin-bottom: 5px;
-  border-top: 1px #E2E2E2 solid;
-  border-bottom: 1px #E2E2E2 solid;
-  width: 82%;
-  text-align: justify; }
-  .header-container .basics-section h3 {
-    margin-top: 0em;
-    margin-bottom: 0px; }
-  .header-container .basics-section__summary {
-    padding-top: 0px;
-    clear: both;
-    font-weight: 100; }
+    vertical-align: top; }
+    .header-container .contact-container__website, .header-container .contact-container__email, .header-container .contact-container__phone {
+      margin-bottom: 0;
+      display: inline-block;
+      width: 50%;
+      font-weight: 100; }
+  .header-container .basics-section {
+    margin-top: 5px;
+    border-top: 1px #E2E2E2 solid;
+    border-bottom: 1px #E2E2E2 solid;
+    width: 100%;
+    text-align: center; }
+    .header-container .basics-section h3 {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .header-container .basics-section__summary {
+      padding: 0 13%;
+      clear: both;
+      font-weight: 100; }
 
 .content {
   padding: 0;
   margin: 0 auto; }
   .content__title {
     background: #D0D0D0;
-    padding: 10px;
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
-    font-size: 1.3em; }
+    font-size: 1em; }
     .content__title--footer {
-      margin-top: 400px;
       margin-bottom: 0; }
   .content .work-section__work_date, .content .work-section__work_position, .content .work-section__work_website, .content .work-section__work_institution, .content .work-section__work_study_date, .content .work-section__work_qualification,
   .content .education-section__work_date,
@@ -276,7 +291,7 @@ body {
   .content .education-section__work_institution,
   .content .education-section__work_study_date,
   .content .education-section__work_qualification {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     display: inline-block;
     width: 30%; }
   .content .work-section .item,
@@ -285,10 +300,10 @@ body {
     padding-bottom: 6px; }
     .content .work-section .item:last-child,
     .content .education-section .item:last-child {
-      margin-bottom: 100px; }
+      margin-bottom: 0px; }
     .content .work-section .item__container,
     .content .education-section .item__container {
-      padding: 15px 0; }
+      padding: 5px 0 0 0; }
     .content .work-section .item__title-container,
     .content .education-section .item__title-container {
       display: inline-block;
@@ -300,10 +315,10 @@ body {
         display: inline-block; }
       .content .work-section .item__title-container .work_position,
       .content .education-section .item__title-container .work_position {
-        font-weight: 400; }
+        font-weight: 100; }
       .content .work-section .item__title-container .work_name,
       .content .education-section .item__title-container .work_name {
-        font-weight: 100;
+        font-weight: 400;
         text-transform: uppercase; }
     .content .work-section .item .work_date,
     .content .education-section .item .work_date {
@@ -317,12 +332,11 @@ body {
         display: inline-block; }
     .content .work-section .item .summary,
     .content .education-section .item .summary {
-      width: 82%;
-      text-align: justify;
+      width: 75%;
       font-weight: 100; }
     .content .work-section .item .highlights,
     .content .education-section .item .highlights {
-      width: 82%;
+      width: 75%;
       font-size: 0.95em;
       font-weight: 100; }
       .content .work-section .item .highlights__list,
@@ -332,12 +346,48 @@ body {
         .content .work-section .item .highlights__list li,
         .content .education-section .item .highlights__list li {
           margin-left: 10px; }
-  .content .skills-section .skills-container .item {
-    display: inline-block;
-    width: 32%;
-    vertical-align: top;
-    min-height: 400px; }
-    .content .skills-section .skills-container .item__name {
-      font-weight: 400; }
-    .content .skills-section .skills-container .item__keywords {
-      font-weight: 100; }
+  .content .skills-section {
+    border-bottom: 1px solid #D0D0D0; }
+    .content .skills-section .skills-container {
+      display: flex;
+      flex-wrap: wrap; }
+      .content .skills-section .skills-container .item {
+        width: 19%;
+        margin: auto;
+        padding: 2px;
+        vertical-align: top;
+        min-height: 195px;
+        text-align: left;
+        border: 0; }
+        .content .skills-section .skills-container .item__name {
+          font-weight: 400; }
+          .content .skills-section .skills-container .item__name p {
+            padding: 5px 0;
+            margin: 0; }
+        .content .skills-section .skills-container .item__keywords {
+          font-weight: 100;
+          padding: 0 15px;
+          margin: 0; }
+
+@media print {
+  body {
+    max-width: 1500px;
+    font-size: 1.7em; }
+    body li {
+      position: relative;
+      list-style: none; }
+      body li::before {
+        position: absolute;
+        top: 14px;
+        left: -30px;
+        content: '';
+        background-color: black;
+        border-radius: 50%;
+        width: 5px;
+        height: 5px; }
+    body .content .skills-section .skills-container {
+      display: block; }
+      body .content .skills-section .skills-container .item {
+        display: inline-block; }
+        body .content .skills-section .skills-container .item__keywords {
+          padding: 0 30px; } }
